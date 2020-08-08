@@ -1,0 +1,18 @@
+/* ================================ General Styles ================================= */
+:root {
+  --theme-color1: #d35266;
+  --theme-color2: #888;
+  --theme-color3: #383838;
+}
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
