@@ -85,6 +85,10 @@ a {
   margin: 0 3%;
 }
 
+.no-margin {
+  margin: 0;
+}
+
 .hide {
   display: none;
 }
@@ -150,6 +154,37 @@ nav a {
   background: url(https://avatars1.githubusercontent.com/u/38935418?s=60&v=4);
   background-size: contain;
   background-position: center;
+}
+
+/* ================================ Banner ================================= */
+.banner {
+  flex-direction: column;
+  padding: 60px 0 20px 0;
+}
+
+.searh-bar {
+  width: 80%;
+  max-width: 700px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 0.8fr;
+  margin: 20px 0;
+  height: 35px;
+}
+
+.searh-bar * {
+  border-radius: 0;
+  border: 1px var(--theme-color1) solid;
+}
+
+.searh-bar a {
+  margin-left: 2px;
+  padding-left: 18%;
+  padding-top: 6px;
+}
+
+.searh-bar i {
+  border: 0;
+  margin-right: 2px;
 }
 
 /* ============================================================================

@@ -17,7 +17,7 @@
     <!-- ================== Header ====================== -->
     <header class="header flex flex-content-apart bg-header">
       <div class="flex header-left flex-content-center side-margin">
-        <div class=" logo flex color-white font-large">
+        <div class="logo flex color-white font-large">
           <img
             width="70"
             height="30"
@@ -31,7 +31,8 @@
             ><i class="fa fa-home"></i>HOME</a
           >
           <a class="color-body font-medium hide show-block-large" href="#"
-            ><span class="font-small"><i class="fa fa-hashtag bg-body color-header"></i></span></i
+            ><span class="font-small"
+              ><i class="fa fa-hashtag bg-body color-header"></i></span
             >COLLECTIONS</a
           >
           <a class="color-body font-medium" href="#"
@@ -41,9 +42,8 @@
             class="color-white font-medium theme-button bg-theme hide-large"
             href="#"
           >
-            <i class="fa fa-search"></i>
-            Search
-          </a>
+            <i class="fa fa-search"></i>Search</a
+          >
           <a
             class="color-white font-medium theme-button bg-theme hide show-block-large"
             href="#"
@@ -61,10 +61,23 @@
         <div class="avatar bg-white"></div>
       </div>
     </header>
-    
-
-    <h1>PolosGear</h1>
-
-    <p>Certified Rally Gear to Power Your Team</p>
+    <!-- ================== Banner ====================== -->
+    <section class="banner bg-theme flex hide show-flex-large color-white">
+      <h1 class="no-margin">PolosGear</h1>
+      <p class="no-margin">FiA Certified Rally Gear to Power Your Team</p>
+      <div class="searh-bar">
+        <select name="categories" id="categories">
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="mercedes">Mercedes</option>
+          <option value="audi">Audi</option>
+        </select>
+        <input type="text" placeholder="What do you search for?" />
+        <input type="text" />
+        <a href="./searh-results.html" class="bg-header color-body"
+          ><i class="fa fa-search"></i>Search</a
+        >
+      </div>
+    </section>
   </body>
 </html>
