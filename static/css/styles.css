@@ -4,6 +4,7 @@
   --theme-color2: #888;
   --theme-color3: #383838;
   --theme-color4: #fff;
+  --theme-color5: #f4f5f6;
 }
 
 * {
@@ -64,6 +65,10 @@ a {
   background-color: var(--theme-color4);
 }
 
+.bg-light {
+  background-color: var(--theme-color5);
+}
+
 .color-header {
   color: var(--theme-color3);
 }
@@ -97,12 +102,16 @@ a {
   display: none;
 }
 
-.font-medium {
-  font-size: 13px;
+.font-tiny {
+  font-size: 11px;
 }
 
 .font-small {
-  font-size: 10px;
+  font-size: 12px;
+}
+
+.font-medium {
+  font-size: 15px;
 }
 
 .font-large {
@@ -171,7 +180,7 @@ nav a {
 
 .searh-bar {
   width: 80%;
-  max-width: 700px;
+  max-width: 800px;
   grid-template-columns: 1fr 2fr 2fr 0.8fr;
   margin: 20px 0;
   height: 35px;
@@ -191,6 +200,66 @@ nav a {
 .searh-bar i {
   border: 0;
   margin-right: 2px;
+}
+
+/* ================================ Hot-Ads Styles ================================= */
+.hot-ads {
+  width: 95%;
+  max-width: 1000px;
+  grid-template-columns: 1fr 8fr 1fr;
+  margin: 0 auto;
+  align-items: center;
+  justify-items: center;
+}
+
+.hot-ads-swipe {
+  border: 1px var(--theme-color5) solid;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  line-height: 20px;
+  padding: 16px;
+  margin-top: 50px;
+}
+
+.hot-ads-swipe:hover {
+  background-color: var(--theme-color5);
+}
+
+.ad-info {
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 20px;
+  align-items: flex-start;
+}
+
+.ad-info h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.ad-info p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.ad-price {
+  border-right: 1px solid var(--theme-color3);
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.ad-purchase {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.ad-image {
+  width: 300px;
+  background-image: url(https://m.media-amazon.com/images/I/513ODC5KemL._AC_SS350_.jpg);
+  height: 200px;
 }
 
 /* ================================ Footer Styles ================================= */
