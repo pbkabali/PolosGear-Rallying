@@ -3,6 +3,7 @@
   --theme-color1: #d35266;
   --theme-color2: #888;
   --theme-color3: #383838;
+  --theme-color4: #fff;
 }
 
 * {
@@ -15,4 +16,160 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.flex-content-center {
+  justify-content: center;
+}
+
+.flex-content-apart {
+  justify-content: space-between;
+}
+
+.flex-content-end {
+  justify-content: flex-end;
+}
+
+.flex-content-around {
+  justify-content: space-around;
+}
+
+.bg-header {
+  background-color: var(--theme-color3);
+}
+
+.bg-theme {
+  background-color: var(--theme-color1);
+}
+
+.bg-body {
+  background-color: var(--theme-color2);
+}
+
+.bg-white {
+  background-color: var(--theme-color4);
+}
+
+.color-header {
+  color: var(--theme-color3);
+}
+
+.color-theme {
+  color: var(--theme-color1);
+}
+
+.color-body {
+  color: var(--theme-color2);
+}
+
+.color-white {
+  color: var(--theme-color4);
+}
+
+.theme-button {
+  border-radius: 2px;
+  padding: 5px;
+}
+
+.side-margin {
+  margin: 0 3%;
+}
+
+.hide {
+  display: none;
+}
+
+.font-medium {
+  font-size: 13px;
+}
+
+.font-small {
+  font-size: 10px;
+}
+
+.font-large {
+  font-size: 20px;
+}
+
+/* ================================ Header Styles ================================= */
+
+.header {
+  flex-wrap: nowrap;
+  padding: 5px 0;
+}
+
+.header-left {
+  width: 92%;
+}
+
+.logo {
+  flex-wrap: nowrap;
+}
+
+.nav {
+  flex-grow: 1;
+  margin-left: 10px;
+  max-width: 600px;
+}
+
+nav a {
+  margin-top: 3px;
+}
+
+.nav i {
+  margin-right: 3px;
+}
+
+.notification {
+  flex-grow: 1;
+}
+
+.notification-badge {
+  background-color: red;
+  font-size: 8px;
+  padding: 0 2px;
+  border-radius: 2px;
+  margin-top: -3px;
+  margin-left: -10px;
+}
+
+.avatar {
+  min-width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: url(https://avatars1.githubusercontent.com/u/38935418?s=60&v=4);
+  background-size: contain;
+  background-position: center;
+}
+
+/* ============================================================================
+                                     Tablet ++
+============================================================================ */
+@media screen and (min-width: 768px) {
+  .header-left {
+    width: 70%;
+    justify-content: flex-start;
+  }
+
+  .hide-large {
+    display: none;
+  }
+
+  .show-block-large {
+    display: block;
+  }
+
+  .show-flex-large {
+    display: flex;
+  }
 }
