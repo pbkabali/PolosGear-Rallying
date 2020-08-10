@@ -22,6 +22,10 @@ a {
   text-decoration: none;
 }
 
+.grid {
+  display: grid;
+}
+
 .flex {
   display: flex;
   align-items: center;
@@ -105,6 +109,10 @@ a {
   font-size: 20px;
 }
 
+.font-bold {
+  font-weight: bold;
+}
+
 /* ================================ Header Styles ================================= */
 
 .header {
@@ -155,7 +163,7 @@ nav a {
   background-position: center;
 }
 
-/* ================================ Banner ================================= */
+/* ================================ Banner Styles ================================= */
 .banner {
   flex-direction: column;
   padding: 60px 0 20px 0;
@@ -164,7 +172,6 @@ nav a {
 .searh-bar {
   width: 80%;
   max-width: 700px;
-  display: grid;
   grid-template-columns: 1fr 2fr 2fr 0.8fr;
   margin: 20px 0;
   height: 35px;
@@ -186,6 +193,59 @@ nav a {
   margin-right: 2px;
 }
 
+/* ================================ Footer Styles ================================= */
+.footer {
+  border-top: 1px var(--theme-color2) solid;
+}
+
+.footer-top {
+  grid-template-columns: 1fr;
+  padding: 20px 0;
+}
+
+.footer-logo {
+  padding: 0 10%;
+}
+
+.footer-middle {
+  align-items: flex-start;
+}
+
+.footer-links {
+  width: 50%;
+  margin-top: 12px;
+  padding: 0 10%;
+  min-width: 200px;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.footer-links a {
+  margin: 5px 0;
+}
+
+.footer-heading {
+  width: 100%;
+  border-bottom: 1px var(--theme-color1) solid;
+  margin-bottom: 5px;
+}
+
+.footer-right {
+  flex-direction: column;
+  align-items: baseline;
+  padding-top: 20px;
+  padding-left: 10%;
+}
+
+.footer-right p {
+  margin-bottom: 0;
+}
+
+.footer-bottom {
+  border-top: 0.1px var(--theme-color2) solid;
+  padding: 5px 20px;
+}
+
 /* ============================================================================
                                      Tablet ++
 ============================================================================ */
@@ -205,5 +265,20 @@ nav a {
 
   .show-flex-large {
     display: flex;
+  }
+
+  .footer-top {
+    grid-template-columns: 2fr 2fr 1fr;
+  }
+
+  .footer-links {
+    padding: 0 5%;
+    min-width: 20px;
+  }
+
+  .footer-right {
+    padding-top: 0;
+    align-items: flex-end;
+    padding-right: 15%;
   }
 }
