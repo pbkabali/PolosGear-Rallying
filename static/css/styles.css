@@ -70,12 +70,24 @@ a {
   background-color: var(--theme-color5);
 }
 
+.hover-bg-theme:hover {
+  background-color: rgba(211, 82, 102, 0.8);
+}
+
+.hover-bg-header:hover {
+  background-color: rgba(56, 56, 56, 0.8);
+}
+
 .color-header {
   color: var(--theme-color3);
 }
 
 .color-theme {
   color: var(--theme-color1);
+}
+
+.hover-color-theme:hover {
+  color: rgba(211, 82, 102, 0.8);
 }
 
 .color-body {
@@ -359,6 +371,10 @@ nav a {
 
 .footer-right p {
   margin-bottom: 0;
+}
+
+.footer-icon {
+  margin: 0 10px;
 }
 
 .footer-bottom {
