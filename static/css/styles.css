@@ -128,11 +128,15 @@ a {
 }
 
 .font-medium {
-  font-size: 15px;
+  font-size: 17px;
 }
 
 .font-large {
   font-size: 20px;
+}
+
+.font-huge {
+  font-size: 2.5em;
 }
 
 .font-bold {
@@ -299,7 +303,7 @@ nav a {
 
 .category-heading {
   border-bottom: 1px var(--theme-color6) solid;
-  padding: 20px 0;
+  padding: 20px 5px;
 }
 
 .product-card {
@@ -332,6 +336,12 @@ nav a {
 
 .add-to-cart:hover {
   background-color: var(--theme-color5);
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
 }
 
 /* ================================ Footer Styles ================================= */
@@ -387,7 +397,7 @@ nav a {
 }
 
 .footer-bottom {
-  border-top: 0.1px var(--theme-color6) solid;
+  border-top: 1px var(--theme-color6) solid;
   padding: 5px 20px;
 }
 
@@ -433,8 +443,19 @@ nav a {
     padding: 2vw;
   }
 
+  .results-content {
+    grid-template-columns: 1fr 4fr;
+  }
+
   .aside {
-    width: 20%;
+    border-right: 1px var(--theme-color6) solid;
+    padding: 10%;
+    padding-top: 2px;
+  }
+
+  .aside hr {
+    border: 0;
+    border-top: 1px var(--theme-color6) solid;
   }
 
   .search-results {
@@ -456,9 +477,10 @@ nav a {
 
   .search-results-card {
     padding: 1vw;
+    border-left: 0;
   }
 
-  .search-results-pane {
-    width: 80%;
+  .results-heading {
+    border-bottom: 0;
   }
 }
