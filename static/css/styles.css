@@ -34,6 +34,10 @@ a {
   flex-wrap: wrap;
 }
 
+.flex-align-start {
+  align-items: flex-start;
+}
+
 .flex-content-center {
   justify-content: center;
 }
@@ -189,6 +193,11 @@ nav a {
 .banner {
   flex-direction: column;
   padding: 60px 0 20px 0;
+}
+
+.results-tagline {
+  width: 80%;
+  max-width: 800px;
 }
 
 .searh-bar {
@@ -387,7 +396,7 @@ nav a {
 ============================================================================ */
 @media screen and (min-width: 768px) {
   .header-left {
-    width: 70%;
+    width: 75%;
     justify-content: flex-start;
   }
 
@@ -422,5 +431,34 @@ nav a {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 2vw;
     padding: 2vw;
+  }
+
+  .aside {
+    width: 20%;
+  }
+
+  .search-results {
+    grid-template-columns: 1fr;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+  }
+
+  .search-result-image {
+    width: 30%;
+    min-width: 300px;
+    height: 230px;
+  }
+
+  .search-result-details {
+    flex-grow: 1;
+  }
+
+  .search-results-card {
+    padding: 1vw;
+  }
+
+  .search-results-pane {
+    width: 80%;
   }
 }
