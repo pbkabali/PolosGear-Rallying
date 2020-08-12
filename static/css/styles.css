@@ -18,6 +18,7 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 a {
@@ -128,7 +129,7 @@ a {
 }
 
 .font-medium {
-  font-size: 17px;
+  font-size: 15px;
 }
 
 .font-large {
@@ -388,6 +389,17 @@ nav a {
   padding-left: 10%;
 }
 
+.region-select {
+  width: 100px;
+}
+
+.select-country {
+  margin-right: 12px;
+}
+
+.select-language {
+  margin-right: 2px;
+}
 .footer-right p {
   margin-bottom: 0;
 }
@@ -478,6 +490,10 @@ nav a {
   .search-results-card {
     padding: 1vw;
     border-left: 0;
+  }
+
+  .search-results-card:hover {
+    background-color: var(--theme-color4);
   }
 
   .results-heading {
