@@ -129,7 +129,7 @@ a {
 }
 
 .font-medium {
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .font-large {
@@ -286,7 +286,7 @@ nav a {
 
 .ad-image {
   width: 300px;
-  background-image: url(https://m.media-amazon.com/images/I/513ODC5KemL._AC_SS350_.jpg);
+  background-image: url(https://lh3.googleusercontent.com/proxy/Wi7Zl2rkqy5ayJAgRjAybCkrRD2VDOtBQDIx20BbwY7Y_GejbLl5RTFjxsPmtaoGbpZBODgpseG4TyAWEnMJhxYQzI23wKbhNN9URvkKvawgHi4);
   height: 200px;
 }
 
@@ -313,10 +313,64 @@ nav a {
   border-radius: 2px;
 }
 
+.card-bottom {
+  margin-top: auto;
+}
+
 .product-image {
-  background-image: url(https://m.media-amazon.com/images/I/513ODC5KemL._AC_SS350_.jpg);
   width: 100%;
   height: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.product-image-1 {
+  background-image: url(https://cdn.shopify.com/s/files/1/0074/3702/5395/products/StudioRSR-Evo-X-Roll-Cage-bolt-in-1_1024x1024.jpg?v=1571720560);
+}
+
+.product-image-2 {
+  background-image: url(https://vsport.com.au/wp-content/uploads/2016/07/ST-DA0702BF2M-001.jpg);
+}
+
+.product-image-3 {
+  background-image: url(https://www.topracingshop.com/zul_pl_Sabelt-Safety-Belts-6-points-Steel-Saloon-Rally-3-Black-with-homologation-FIA-15769_1.jpg);
+}
+
+.product-image-4 {
+  background-image: url(https://gsm.fra1.cdn.digitaloceanspaces.com/2016/01/Subaru-Impreza-STI-specialist-bucket-seats-1024x683.jpg);
+}
+
+.product-image-5 {
+  background-image: url(https://ebay-assets.demon-tweeks.com/demontweeksdirect/OMPCAB316/gallery_image_def/ebay1/omp_4k-powder-handheld.jpg);
+}
+
+.product-image-6 {
+  background-image: url(https://www.mcgillmotorsport.com/images/Alpinestars%20GP%20Start%20All%203355514.jpg);
+}
+
+.product-image-7 {
+  background-image: url(https://cdn.shopify.com/s/files/1/2291/8079/products/RALLY-HAWAIIAN_2048x.png?v=1530146867);
+}
+
+.product-image-8 {
+  background-image: url(https://www.automobilsport.com/uploads/_neustart33/wrc-rallyes/pirelli-tyre-for-2021-wrc-1.JPG);
+}
+
+.product-image-9 {
+  background-image: url(https://www.gartrac.com/shop/media/catalog/product/cache/1/image/b34ee382358eaadc74a5c14797ef47d9/g/a/gar8159.jpg);
+}
+
+.product-image-10 {
+  background-image: url(https://images-na.ssl-images-amazon.com/images/I/61w6O-pkt1L._AC_SX425_.jpg);
+}
+
+.product-image-11 {
+  background-image: url(https://www.motorsportauctions.com/user_images/5836726.jpg);
+}
+
+.product-image-12 {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS6EdZTgqAFHgnAwqByHIlUFTysjiwOqEs3hA&usqp=CAU);
 }
 
 .product-details {
