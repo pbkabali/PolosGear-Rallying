@@ -1,11 +1,16 @@
 # PolosGear-Rallying
 
 This is a concept for an online market place where motor rallying teams can go to buy or hire
-materials, tools and equipment that they need to succeed in a rallying competetion.
+materials, tools and equipment that they need to succeed in a rallying competition.
 
 It is submitted as my capstone project for the Microverse HMTL/CSS curriculum.
 
-![screenshot](./images/screenshot.png)
+## Screenshots
+
+| Desktop / Tablet                                    | Mobile                                                     |
+| --------------------------------------------------- | ---------------------------------------------------------- |
+| ![screenshot](./static/graphics/home-screen.png)    | ![screenshot](./static/graphics/home-mobile.png)           |
+| ![screenshot](./static/graphics/search-results.png) | ![screenshot](./static/graphics/search-results-mobile.png) |
 
 ## Built With
 
@@ -58,6 +63,7 @@ Give a ⭐️ if you like this project!
 
 - [Mohammed Awad on Behance](https://www.behance.net/M_Awad)
 - Microverse Team 140 (The Cupids)
+- [Font Awesome Icons](https://fontawesome.com)
 
 ## 📝 License
 
