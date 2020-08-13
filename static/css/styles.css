@@ -1,0 +1,575 @@
+/* ================================ General Styles ================================= */
+:root {
+  --theme-color1: #d35266;
+  --theme-color2: #888;
+  --theme-color3: #383838;
+  --theme-color4: #fff;
+  --theme-color5: #f4f5f6;
+  --theme-color6: #e3e3e3;
+}
+
+@font-face {
+  font-family: Gotham;
+  src: url("./fonts/Gotham-Bold.otf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Gotham;
+  src: url("./fonts/Gotham-Light.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Gotham, Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.grid {
+  display: grid;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.flex-align-start {
+  align-items: flex-start;
+}
+
+.flex-content-center {
+  justify-content: center;
+}
+
+.flex-content-apart {
+  justify-content: space-between;
+}
+
+.flex-content-end {
+  justify-content: flex-end;
+}
+
+.flex-content-around {
+  justify-content: space-around;
+}
+
+.bg-header {
+  background-color: var(--theme-color3);
+}
+
+.bg-theme {
+  background-color: var(--theme-color1);
+}
+
+.bg-body {
+  background-color: var(--theme-color2);
+}
+
+.bg-white {
+  background-color: var(--theme-color4);
+}
+
+.bg-light {
+  background-color: var(--theme-color5);
+}
+
+.hover-bg-theme:hover {
+  background-color: rgba(211, 82, 102, 0.8);
+}
+
+.hover-bg-header:hover {
+  background-color: rgba(56, 56, 56, 0.8);
+}
+
+.color-header {
+  color: var(--theme-color3);
+}
+
+.color-theme {
+  color: var(--theme-color1);
+}
+
+.hover-color-theme:hover {
+  color: rgba(211, 82, 102, 0.8);
+}
+
+.color-body {
+  color: var(--theme-color2);
+}
+
+.color-white {
+  color: var(--theme-color4);
+}
+
+.theme-button {
+  border-radius: 2px;
+  padding: 5px;
+}
+
+.side-margin {
+  margin: 0 3%;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.hide {
+  display: none;
+}
+
+.font-tiny {
+  font-size: 11px;
+}
+
+.font-small {
+  font-size: 12px;
+}
+
+.font-medium {
+  font-size: 14px;
+}
+
+.font-large {
+  font-size: 20px;
+}
+
+.font-huge {
+  font-size: 2.5em;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+/* ================================ Header Styles ================================= */
+
+.header {
+  flex-wrap: nowrap;
+  padding: 5px 0;
+}
+
+.header-left {
+  width: 92%;
+}
+
+.logo {
+  flex-wrap: nowrap;
+}
+
+.nav {
+  flex-grow: 1;
+  margin-left: 10px;
+  max-width: 600px;
+}
+
+nav a {
+  margin-top: 3px;
+}
+
+.nav i {
+  margin-right: 3px;
+}
+
+.header-right {
+  flex-grow: 1;
+}
+
+.notification-badge {
+  background-color: red;
+  font-size: 8px;
+  padding: 0 2px;
+  border-radius: 2px;
+  margin: -10px 8px 0 -10px;
+}
+
+.avatar {
+  min-width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: url(https://avatars1.githubusercontent.com/u/38935418?s=60&v=4);
+  background-size: contain;
+  background-position: center;
+}
+
+/* ================================ Banner Styles ================================= */
+.banner {
+  flex-direction: column;
+  padding: 60px 0 20px 0;
+}
+
+.results-tagline {
+  width: 80%;
+  max-width: 800px;
+}
+
+.searh-bar {
+  width: 80%;
+  max-width: 800px;
+  grid-template-columns: 1fr 2fr 2fr 0.8fr;
+  margin: 20px 0;
+  height: 35px;
+}
+
+.searh-bar * {
+  border-radius: 0;
+  border: 1px var(--theme-color1) solid;
+}
+
+.searh-bar a {
+  margin-left: 2px;
+  padding-left: 18%;
+  padding-top: 6px;
+}
+
+.searh-bar i {
+  border: 0;
+  margin-right: 2px;
+}
+
+/* ================================ Hot-Ads Styles ================================= */
+.hot-ads {
+  width: 95%;
+  max-width: 1000px;
+  grid-template-columns: 1fr 8fr 1fr;
+  margin: 0 auto;
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 30px;
+}
+
+.hot-ads-swipe {
+  border: 1px var(--theme-color5) solid;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  line-height: 20px;
+  padding: 16px;
+  margin-top: 50px;
+}
+
+.hot-ads-swipe:hover {
+  background-color: var(--theme-color5);
+}
+
+.ad-info {
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 20px;
+  align-items: flex-start;
+}
+
+.ad-info h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.ad-info p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.ad-price {
+  border-right: 1px solid var(--theme-color3);
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.ad-purchase {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.ad-image {
+  width: 300px;
+  height: 200px;
+  background-image: url(https://media.demon-tweeks.com/catalog/product/cache/image/265x265/beff4985b56e3afdbeabfc89641a4582/s/p/spl30102632ad1.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* ================================ Product Styles ================================= */
+
+.products {
+  border-top: 1px var(--theme-color6) solid;
+}
+
+.product-group {
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 4vw;
+  padding: 4vw;
+}
+
+.category-heading {
+  border-bottom: 1px var(--theme-color6) solid;
+  padding: 20px 5px;
+}
+
+.product-card {
+  min-height: 200px;
+  border: 1px var(--theme-color6) solid;
+  border-radius: 2px;
+}
+
+.card-bottom {
+  margin-top: auto;
+}
+
+.product-image {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.product-image-1 {
+  background-image: url(https://cdn.shopify.com/s/files/1/0074/3702/5395/products/StudioRSR-Evo-X-Roll-Cage-bolt-in-1_1024x1024.jpg?v=1571720560);
+}
+
+.product-image-2 {
+  background-image: url(https://vsport.com.au/wp-content/uploads/2016/07/ST-DA0702BF2M-001.jpg);
+}
+
+.product-image-3 {
+  background-image: url(https://www.topracingshop.com/zul_pl_Sabelt-Safety-Belts-6-points-Steel-Saloon-Rally-3-Black-with-homologation-FIA-15769_1.jpg);
+}
+
+.product-image-4 {
+  background-image: url(https://gsm.fra1.cdn.digitaloceanspaces.com/2016/01/Subaru-Impreza-STI-specialist-bucket-seats-1024x683.jpg);
+}
+
+.product-image-5 {
+  background-image: url(https://ebay-assets.demon-tweeks.com/demontweeksdirect/OMPCAB316/gallery_image_def/ebay1/omp_4k-powder-handheld.jpg);
+}
+
+.product-image-6 {
+  background-image: url(https://www.mcgillmotorsport.com/images/Alpinestars%20GP%20Start%20All%203355514.jpg);
+}
+
+.product-image-7 {
+  background-image: url(https://cdn.shopify.com/s/files/1/2291/8079/products/RALLY-HAWAIIAN_2048x.png?v=1530146867);
+}
+
+.product-image-8 {
+  background-image: url(https://www.automobilsport.com/uploads/_neustart33/wrc-rallyes/pirelli-tyre-for-2021-wrc-1.JPG);
+}
+
+.product-image-9 {
+  background-image: url(https://www.gartrac.com/shop/media/catalog/product/cache/1/image/b34ee382358eaadc74a5c14797ef47d9/g/a/gar8159.jpg);
+}
+
+.product-image-10 {
+  background-image: url(https://images-na.ssl-images-amazon.com/images/I/61w6O-pkt1L._AC_SX425_.jpg);
+}
+
+.product-image-11 {
+  background-image: url(https://www.motorsportauctions.com/user_images/5836726.jpg);
+}
+
+.product-image-12 {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS6EdZTgqAFHgnAwqByHIlUFTysjiwOqEs3hA&usqp=CAU);
+}
+
+.product-details {
+  padding: 20px;
+}
+
+.product-details h4 {
+  margin: 0;
+}
+
+.add-to-cart {
+  width: 40px;
+  height: 40px;
+  padding-left: 12px;
+  padding-top: 10px;
+  border: 1px var(--theme-color5) solid;
+}
+
+.add-to-cart:hover {
+  background-color: var(--theme-color5);
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+/* ================================ Footer Styles ================================= */
+.footer {
+  border-top: 1px var(--theme-color6) solid;
+}
+
+.footer-top {
+  grid-template-columns: 1fr;
+  padding: 20px 0;
+}
+
+.footer-logo {
+  padding: 0 10%;
+}
+
+.footer-middle {
+  align-items: flex-start;
+}
+
+.footer-links {
+  width: 50%;
+  margin-top: 12px;
+  padding: 0 10%;
+  min-width: 200px;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.footer-links a {
+  margin: 5px 0;
+}
+
+.footer-heading {
+  width: 100%;
+  border-bottom: 1px var(--theme-color1) solid;
+  margin-bottom: 5px;
+}
+
+.footer-right {
+  flex-direction: column;
+  align-items: baseline;
+  padding-top: 20px;
+  padding-left: 10%;
+}
+
+.region-select {
+  width: 100px;
+}
+
+.select-country {
+  margin-right: 12px;
+}
+
+.select-language {
+  margin-right: 2px;
+}
+
+.footer-right p {
+  margin-bottom: 0;
+}
+
+.footer-icon {
+  margin: 0 10px;
+}
+
+.footer-bottom {
+  border-top: 1px var(--theme-color6) solid;
+  padding: 5px 20px;
+}
+
+/* ============================================================================
+                                     Tablet ++
+============================================================================ */
+@media screen and (min-width: 768px) {
+  .header-left {
+    width: 75%;
+    justify-content: flex-start;
+  }
+
+  .hide-large {
+    display: none;
+  }
+
+  .show-block-large {
+    display: block;
+  }
+
+  .show-flex-large {
+    display: flex;
+  }
+
+  .footer-top {
+    grid-template-columns: 2fr 2fr 1fr;
+  }
+
+  .footer-links {
+    padding: 0 5%;
+    min-width: 20px;
+  }
+
+  .footer-right {
+    padding-top: 0;
+    align-items: flex-end;
+    padding-right: 15%;
+  }
+
+  .product-group {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2vw;
+    padding: 2vw;
+  }
+
+  .results-content {
+    grid-template-columns: 1fr 4fr;
+  }
+
+  .aside {
+    border-right: 1px var(--theme-color6) solid;
+    padding: 10%;
+    padding-top: 2px;
+  }
+
+  .aside hr {
+    border: 0;
+    border-top: 1px var(--theme-color6) solid;
+  }
+
+  .search-results {
+    grid-template-columns: 1fr;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+  }
+
+  .search-result-image {
+    width: 30%;
+    min-width: 300px;
+    height: 230px;
+  }
+
+  .search-result-details {
+    flex-grow: 1;
+  }
+
+  .search-results-card {
+    padding: 1vw;
+    border-left: 0;
+  }
+
+  .search-results-card:hover {
+    background-color: var(--theme-color4);
+  }
+
+  .results-heading {
+    border-bottom: 0;
+  }
+}
