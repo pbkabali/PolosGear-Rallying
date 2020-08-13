@@ -8,6 +8,20 @@
   --theme-color6: #e3e3e3;
 }
 
+@font-face {
+  font-family: Gotham;
+  src: url("./fonts/Gotham-Bold.otf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Gotham;
+  src: url("./fonts/Gotham-Light.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -18,7 +32,7 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: Gotham, Arial, sans-serif;
 }
 
 a {
