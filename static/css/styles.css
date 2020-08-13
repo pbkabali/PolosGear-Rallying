@@ -287,8 +287,11 @@ nav a {
 
 .ad-image {
   width: 300px;
-  background-image: url(https://lh3.googleusercontent.com/proxy/Wi7Zl2rkqy5ayJAgRjAybCkrRD2VDOtBQDIx20BbwY7Y_GejbLl5RTFjxsPmtaoGbpZBODgpseG4TyAWEnMJhxYQzI23wKbhNN9URvkKvawgHi4);
   height: 200px;
+  background-image: url(https://media.demon-tweeks.com/catalog/product/cache/image/265x265/beff4985b56e3afdbeabfc89641a4582/s/p/spl30102632ad1.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /* ================================ Product Styles ================================= */
@@ -375,7 +378,7 @@ nav a {
 }
 
 .product-details {
-  padding: 10px;
+  padding: 20px;
 }
 
 .product-details h4 {
